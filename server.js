@@ -16,8 +16,7 @@ app.use(function (req, res) {
   res.setHeader('Content-Type', 'text/plain')
   res.write('you posted:\n')
   res.end(JSON.stringify(req.body, null, 2))
-	console.log(JSON.stringify(req.header, null,2))
-	console.log(JSON.stringify(req.body, null,2))
+  console.log(JSON.stringify(req.body, null,2))
 })
 
 app.listen (port, ()=> console.log(`API-sink app listening on port ${port}!`))
